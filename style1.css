@@ -1,0 +1,49 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#stage {
+    position: relative;
+    /* width: 100%; height: 100vh; */
+
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 300px;
+
+}
+
+/*** 共通 ***/
+.motion-type-1,
+.motion-type-1 div {
+    /* position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #aaeefe;
+    transform: translateY(100%);
+}
+
+/*******************************************************************************************
+* animation
+*******************************************************************************************/
+.motion-type-1 div:nth-child(1) {
+    transform: scale(0);
+    background-color: #E7BABB;
+    animation: scale 0.8s ease 0.5s forwards;
+}
+
+/*******************************************************************************************
+* keyframes
+*******************************************************************************************/
+@keyframes scale {
+    from { transform: scale(0); }
+    to   { transform: scale(1); }
+}
