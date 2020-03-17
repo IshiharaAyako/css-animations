@@ -55,7 +55,7 @@ html, body {
     bottom: 0;
     margin: auto;
     transform: scale(0);
-    font: caption;
+    font-family: 'コーポレート・ロゴ（ラウンド）';
     font-size: 90px;
     color: #f9783b;
 
